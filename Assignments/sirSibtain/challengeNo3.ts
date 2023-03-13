@@ -1,5 +1,7 @@
 // Sir Sibtain Assignments
 // Challenge NO. 3
+// Calculate the ratio of given integer array's elements that are positive, negative & zero
+
 
 function plusMinus(arr:number[]) {
     let positive = 0;
