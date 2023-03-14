@@ -6,5 +6,4 @@ function generateRandomNumber(start:number, end:number):number {
   let multiplier = end - start +1
   return Math.floor(Math.random() * multiplier) + start
 }
-
 console.log(generateRandomNumber(3, 9))
