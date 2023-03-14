@@ -540,9 +540,177 @@ console.log(str1);
 
 // setTimeout(function() {console.log(person.age); }, 2000)
 
-let foo = 123
-if (true) {
-    let foo = 456
-}
+// let foo = 123
+// if (true) {
+//     let foo = 456
+// }
 
-console.log(foo);
+// console.log(foo);
+
+// Object & Array Destructuring
+
+// var rect = {x: 0, y:10, w: 15, h:20}
+// var {x, y, w, h} = rect
+// console.log(x, y, w, h);
+// x= 5, y=12, w=17, h=22
+// console.log(x, y, w, h);
+// console.log(rect);
+// rect.x = 10
+// console.log(x, rect.x);
+
+// // Object Destructuring with rest
+// var {w, x, ...remaining} = {w:1, x:2, y:3, z:4}
+// console.log(w, x, remaining)
+
+// const point3D = {x:1, y:2, z:3}
+// const {z, ...point2D} = point3D
+// console.log(point2D)
+
+// // How to swap two variables without using a third one?
+
+// var x = 1, y = 2;
+// console.log(x, y);
+// [x, y] = [y, x]
+// console.log(x, y);
+
+// let [a, b, ...others] = ['shafiq', 'zia', 'daniyal', 'adil']
+// console.log(a, b, others)
+
+// // Array Destructuring with ignoes
+
+// var [x, , y, , ...etc] = [1, 2, 3, 4, 5, 6]
+// console.log(x, y, etc);
+
+// // Destructuring can make your code more readable and maintainable by reducing the line count and making the intent clear.
+
+// // Spread Operator
+
+// function foo(x:number, y:number, z:number) {
+//     x++, y++, z++
+//     return x+y+z
+// }
+// var args = [0, 1, 2]
+
+
+// console.log(foo(...args));
+
+// // Array Assignment, the spread operator allow you to easily place an expanded version of an array into another array.
+
+// var list = [1, 2]
+// list = [...list, 3, 4]
+// console.log(list);
+// list = [0, ...list]
+// console.log(list);
+
+// // Object Spread, We can also spread an object into another object
+
+// let p2D = {x:1, y:2}
+// let p3D = {...p2D, z:3}
+// console.log(p2D, p3D)
+
+// p3D = {x:5, z:4, ...p2D}
+// console.log(p2D, p3D);
+// let rec = {...p2D, x:5, w:10, h:20}
+// console.log(p2D, rec)
+
+// let odd = [1, 3, 5, 7, 9]
+// let even = [2, 4, 6, 8, 10]
+// let oddEven = [...odd, ...even]
+// console.log(oddEven);
+
+// Generate Random Numbers Math.rando()
+
+// function getRandomInt(max:number) {
+//     console.log(Math.floor(Math.random() * max));    
+// }
+// getRandomInt(100)
+
+// Getting a random number b/w two values
+
+// function getRandom(min, max) {
+//     return Math.floor(Math.random() * (max - min) + min)
+// }
+// console.log(getRandom(50,55));
+
+// function getRandomNum(min, max) {
+//     min = Math.ceil(min)
+//     max = Math.floor(max)
+//     return Math.floor(Math.random() * (max - min) + min)  // max is exclusive & min is inclusive    
+// }
+// console.log(getRandomNum(2,5))
+
+// function getRandomNumInc(min, max) {
+//     return Math.floor(Math.random() * (max-min + 1) + min)  // both limits are inclusive
+// }
+// console.log(getRandomNumInc(2,5))
+// console.log(getRandomNumInc(1,7))
+
+let drawlist:number[] = []
+
+function committeDraw(max: number): void {
+    let draw:number = 0
+    while (drawlist.length !== max) {
+        draw = Math.ceil(Math.random() * max)
+        if (!drawlist.includes(draw)) {
+            drawList.push(draw)
+        }    
+    }    
+}
+committeDraw(7)
+
+console.log(drawlist);
+
+// Arrays
+// const fruits = []
+// fruits.push('banana', 'apple', 'peach')
+// console.log(fruits.length);
+
+// fruits[5] = 'mango'
+// console.log(fruits.length);
+// console.log(fruits);
+// console.log(Object.keys(fruits));
+
+// // Increasing the lenght of an array
+// fruits.length = 10
+// console.log(fruits);
+// console.log(Object.keys(fruits));
+// console.log(fruits.length);
+// console.log(fruits[7]);
+
+// // Decreasing the lenght
+// fruits.length = 3
+// console.log(fruits);
+
+// const arr1 = ['a', 'b', 'c']
+// const arr2 = ['d', 'e', 'f']
+// const arr3 = arr1.concat(arr2, arr1, arr2, 'e', 'i','j', [1, 2, 3])
+// console.log(arr3);
+
+// // Concatenaating Nasted Arrays
+
+// const num1 = [[1]]
+// const num2 = [2, [3]]
+// const num3 = num1.concat(num2)
+// console.log(num3, num3.length);
+// num1[0].push(4)
+// num2[1].push(5)
+// console.log(num3);
+// console.log();
+// num1.push(6)
+// num2.push(7)
+// console.log(num1);
+// console.log(num2);
+// console.log(num3);
+
+
+
+
+
+
+
+
+
+
+
+
+
