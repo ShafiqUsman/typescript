@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let userID = {
     name: "Shafiq",
     age: 10
@@ -158,3 +156,4 @@ const sha = { dbId: 22, email: "shafiq@gmail.com", userId: 2211,
     getCoupon: (couponName, value) => { return 10; }
 };
 console.log(sha);
+export {};

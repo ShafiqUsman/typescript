@@ -1,4 +1,3 @@
-"use strict";
 // I want to draw a lucky draw or committee with a given number and store the result in an array without duplications so no one can get double prize and everyone get the chance just like a committee
 let drawList = []; // Final List of Prizes who get 1st and so on...
 function committeeDraw(max) {
@@ -11,4 +10,5 @@ function committeeDraw(max) {
     }
     return drawList;
 }
-console.log(committeeDraw(10));
+console.log(committeeDraw(50000));
+export {};

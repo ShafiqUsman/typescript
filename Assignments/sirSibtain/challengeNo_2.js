@@ -1,4 +1,3 @@
-"use strict";
 // Sir. Sibtain Assignments
 // Assigntment Dated : 12-Mar-2023
 function timeConversion(s) {
@@ -23,3 +22,4 @@ function timeChange(s) {
 }
 timeChange('10:20:30 PM');
 timeChange('10:20:30 AM');
+export {};

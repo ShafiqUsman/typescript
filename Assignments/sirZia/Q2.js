@@ -1,4 +1,3 @@
-"use strict";
 /* Question # 2.
 Personal Message: Store a person’s name in a variable, and print a message to that person.
 Your message should be simple, such as,
@@ -14,3 +13,4 @@ for (i = 1; i <= upto; i++) {
 }
 console.log(`The sum of numbers: 1 to ${upto} is ${sum}`);
 console.log(typeof 13, ff37);
+export {};

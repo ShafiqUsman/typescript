@@ -1,4 +1,3 @@
-"use strict";
 // Task 1: Calculate Students Grade
 function grade(marks1, marks2) {
     let avg = (marks1 + marks2) / 2;
@@ -27,3 +26,4 @@ function grade(marks1, marks2) {
 grade(70, 90);
 grade(50, 60);
 grade(10, 10);
+export {};

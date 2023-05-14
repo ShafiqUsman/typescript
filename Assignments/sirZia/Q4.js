@@ -1,4 +1,3 @@
-"use strict";
 /* Question # 4. & 5
 Famous Quote: Find a quote from a famous person you admire.
 Print the quote and the name of its author. Your output should look something
@@ -20,3 +19,4 @@ console.log(quoteMsg(quotation, writer));
 quotation = "The future belongs to those who believe in the beauty of their dreams.";
 writer = "Eleanor Roosevelt";
 console.log(quoteMsg(quotation, writer));
+export {};

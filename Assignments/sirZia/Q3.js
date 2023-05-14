@@ -1,4 +1,3 @@
-"use strict";
 /* Question # 3.
 Name Cases: Store a person’s name in a variable, and then
 print that person’s name in lowercase, uppercase, and titlecase. */
@@ -10,3 +9,4 @@ function toTiteleCase(str1) {
     let strArray = str1.toLowerCase().split(' ').map(ele => { return ele.charAt(0).toUpperCase() + ele.slice(1); });
     return strArray.join(" ");
 }
+export {};

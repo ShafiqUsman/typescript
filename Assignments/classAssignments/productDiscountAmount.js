@@ -1,4 +1,3 @@
-"use strict";
 // Task 3: Discount Amount for a Product
 function inovice(price, disc) {
     let discount = price * (disc / 100);
@@ -16,3 +15,4 @@ inovice(1000, 30);
 inovice(1000, 50);
 inovice(1000, 20);
 inovice(1000, 100);
+export {};

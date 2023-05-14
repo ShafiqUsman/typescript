@@ -1,4 +1,3 @@
-"use strict";
 // Factorial of a number
 function factor(num) {
     let result = 1;
@@ -11,3 +10,4 @@ function factor(num) {
 factor(5);
 factor(4);
 factor(10);
+export {};

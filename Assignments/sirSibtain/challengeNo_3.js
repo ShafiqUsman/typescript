@@ -1,8 +1,6 @@
-"use strict";
 // Sir Sibtain Assignments
 // Challenge NO. 3
 // Calculate the ratio of given integer array's elements that are positive, negative & zero
-Object.defineProperty(exports, "__esModule", { value: true });
 function plusMinus(arr) {
     let positive = 0;
     let negative = 0;
@@ -26,3 +24,4 @@ function plusMinus(arr) {
 let arr = [-1, -1, 0, 1, 1];
 plusMinus(arr);
 plusMinus([-4, 3, -9, 0, 4, 1]);
+export {};

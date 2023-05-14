@@ -1,4 +1,3 @@
-"use strict";
 // Sir. Sibtain Assignments
 // Assigntment Dated : 11-Mar-2023
 let arr = [1, 2, 3, 4, 5];
@@ -27,3 +26,4 @@ function sumArrayExceptOneElement(arr) {
     }
 }
 sumArrayExceptOneElement(arr);
+export {};

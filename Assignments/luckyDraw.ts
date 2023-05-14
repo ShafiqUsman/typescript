@@ -13,7 +13,7 @@ function committeeDraw(max:number):number[] {       // max is the maximum no of 
     return drawList
 }
 
-console.log(committeeDraw(10))
+console.log(committeeDraw(50000))
 
 
 
